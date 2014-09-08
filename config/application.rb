@@ -28,6 +28,7 @@ module SampleApp
     # config.i18n.default_locale = :de
 #Remove non-working color codes from rspec output:
     #config.colorize_logging = false
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
 
