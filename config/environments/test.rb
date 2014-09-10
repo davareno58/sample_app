@@ -37,6 +37,9 @@ SampleApp::Application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   # Removes non-working color codes from rspec output:
-  #config.colorize_logging = false 
+  #config.colorize_logging = false
+
+  # Speed up tests by lowering bcrypt's cost function.
+  ActiveModel::SecurePassword.min_cost = true
 end
 
